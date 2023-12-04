@@ -25,7 +25,7 @@ class PaigeGemmaPage {
     }
     
      addToShoppingBag() {
-        return '[id$="add-to-shopping-bag-button"]'
+        return '#add-to-shopping-bag-button'
     }
     
      goodNewsShippingMsg() {

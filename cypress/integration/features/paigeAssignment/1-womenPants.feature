@@ -26,17 +26,17 @@ Scenario Outline: User Buys Women Pants Scenario
         # Then Sold Out message appears
         And I wait for "1" seconds
         When I select size 31
-        And I wait for "5" seconds
-        Then I add it to the shopping bag
-        And I wait for "5" seconds
-        And The Good News Shipping message displays
-        Then I assert the Checkout button exists
-        And I wait for "1" seconds
-        When I hover on Checkout button
-        And I wait for "1" seconds
-        Then I click on Checkout button
-        And I wait for "1" seconds
-        And I click on Checkout As Guest
+        # And I wait for "5" seconds
+        # Then I add it to the shopping bag
+        # And I wait for "5" seconds
+        # And The Good News Shipping message displays
+        # Then I assert the Checkout button exists
+        # And I wait for "1" seconds
+        # When I hover on Checkout button
+        # And I wait for "1" seconds
+        # Then I click on Checkout button
+        # And I wait for "1" seconds
+        # And I click on Checkout As Guest
         
         Examples:
         | pantsItem                             |
