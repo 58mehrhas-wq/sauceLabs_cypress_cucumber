@@ -1,11 +1,11 @@
-class PaigeBrooklynPage {
+class PaigeGemmaPage {
 
-     brooklynPageTile() {
+     gemmaPageTile() {
         return '.pg-productInfo_title--main'
     }
     
-     size26() {
-        return '.pg-productInfo_button-list > :nth-child(4) > a'
+     size25() {
+        return '.pg-productInfo_sizes > .pg-productInfo_button-list > :nth-child(3) > a'
     }
     
      inStock() {
@@ -13,7 +13,7 @@ class PaigeBrooklynPage {
     }
     
      size31() {
-        return 'a[aria-label="Size Selected: 31. 10 available."]'
+        return '.pg-productInfo_sizes > .pg-productInfo_button-list > :nth-child(9) > a'
     }
     
      soldOut() {
@@ -21,11 +21,11 @@ class PaigeBrooklynPage {
     }
     
      size29() {
-        return 'a[aria-label="Size Selected: 29. 12 available."]'
+        return '.pg-productInfo_sizes > .pg-productInfo_button-list > :nth-child(7) > a'
     }
     
      addToShoppingBag() {
-        return '#add-to-shopping-bag-button'
+        return '[id$="add-to-shopping-bag-button"]'
     }
     
      goodNewsShippingMsg() {
@@ -49,4 +49,4 @@ class PaigeBrooklynPage {
     }
 }
 
-export default PaigeBrooklynPage;
+export default PaigeGemmaPage;

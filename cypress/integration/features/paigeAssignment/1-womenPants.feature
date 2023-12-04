@@ -12,17 +12,20 @@ Scenario Outline: User Buys Women Pants Scenario
         And I wait for "5" seconds
         Then I select Pants option
         And I assert the WOMEN PANTS title appears
-        When I click into the search field
+        # When I click into the search field
         And I wait for "1" seconds
-        Then I search for "<pantsItem>"
-        And I click on Brooklyn button
-
-        And I assert the Brooklyn title appears
-        When I select size 26
+        # Then I search for "<pantsItem>"
+        And I click on Gemma image
+        And I wait for "5" seconds
+        And I assert the Gemma title appears
+        And I wait for "1" seconds
+        When I select size 25
         # Then In Stock message appears
-        When I select size 31
-        # Then Sold Out message appears
+        And I wait for "1" seconds
         When I select size 29
+        # Then Sold Out message appears
+        And I wait for "1" seconds
+        When I select size 31
         And I wait for "5" seconds
         Then I add it to the shopping bag
         And I wait for "5" seconds
@@ -36,5 +39,5 @@ Scenario Outline: User Buys Women Pants Scenario
         And I click on Checkout As Guest
         
         Examples:
-        | pantsItem                     |
-        | Brooklyn Crop - Black Willow  |
+        | pantsItem                             |
+        | Gemma - Black Fog Luxe Coating        |

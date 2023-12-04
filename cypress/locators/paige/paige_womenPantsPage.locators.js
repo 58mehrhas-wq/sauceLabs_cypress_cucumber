@@ -8,8 +8,8 @@ class PaigeWomenPantsPage {
         return 'app-header-default > div > app-header-search > div > form > div > input'
     }
 
-    brooklynBtn() {
-        return 'div.pg-navSearch-recommended-imgDescription > a'
+    gemmaBtn() {
+        return 'img[alt="Gemma - Black Fog Luxe Coating"]'
     }
 }
 export default PaigeWomenPantsPage;
