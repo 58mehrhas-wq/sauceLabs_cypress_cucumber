@@ -2,16 +2,16 @@ Feature: Sauce Demo Login Page for Testing eCommerce
 
 Scenario Outline: User Login the website
         Given I am in Sauce Demo login Page
-        And I wait for "10" seconds
+        And I wait for "2" seconds
         And I maximize the window
         When I enter "<username>" and "<password>"
         And I wait for "2" seconds
         And I click on login button
         Then I land on Swag Labs page
-        And I wait for "10" seconds  
+        And I wait for "2" seconds  
         When I click on Sauce Labs Backpack    
         Then I land on Backpack page
-        And I wait for "5" seconds 
+        And I wait for "2" seconds 
         When I click on Add to Cart for Backpack    
         Then I see the Remove button appears    
         And I click on the Remove button    
@@ -31,9 +31,9 @@ Scenario Outline: User Login the website
         And I wait for "1" seconds
         Then I land on the Products page
         When I click on the Hamburger button        
-        And I wait for "5" seconds        
+        And I wait for "2" seconds        
         When I click on logout button
-        And I wait for "5" seconds 
+        And I wait for "2" seconds 
         Then I land on Sauce Demo Login Page again
 
         

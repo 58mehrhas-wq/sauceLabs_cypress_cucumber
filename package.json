@@ -4,7 +4,9 @@
   "description": "Automation scripts",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec \"**/*.feature\"",
+    "test": "npx cypress run",
+    "headTest": "npm run test -- --headed",
+    "swagLabsTest": "npx cypress run --spec cypress/integration/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser chrome",
     "test:all": "cypress run --spec \"**/*.features\"",
     "cypress:report": "generate-mochawesome-report"
   },
