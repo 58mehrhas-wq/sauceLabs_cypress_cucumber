@@ -8,7 +8,9 @@
     "headTest": "npm run test -- --headed",
     "swagLabsTest": "npx cypress run --spec cypress/integration/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser chrome",
     "test:all": "cypress run --spec \"**/*.features\"",
-    "cypress:report": "generate-mochawesome-report"
+    "cypress:report": "generate-mochawesome-report",
+    "Test01": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser electron --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -29,11 +31,13 @@
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
-    "cypress": "^8.3.0",
+    "allure-commandline": "^2.30.0",
+    "cypress": "^13.3.3",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mochawesome-reporter": "^1.3.0",
     "cypress-xpath": "^1.6.1",
     "mocha": "^8.2.1",
+    "mocha-allure-reporter": "^1.4.0",
     "mochawesome": "^7.0.1",
     "mochawesome-merge": "^4.2.0"
   }
