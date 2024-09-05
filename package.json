@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx cypress run",
     "headTest": "npm run test -- --headed",
-    "swagLabsTest": "npx cypress run --spec cypress/integration/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser chrome",
+    "swagLabsTest": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser electron",
     "test:all": "cypress run --spec \"**/*.features\"",
     "cypress:report": "generate-mochawesome-report",
     "Test01": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser electron --reporter mocha-allure-reporter",
@@ -28,7 +28,8 @@
     "mysql": "^2.18.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/features/sauceLabsDemoAssignment"
   },
   "devDependencies": {
     "allure-commandline": "^2.30.0",

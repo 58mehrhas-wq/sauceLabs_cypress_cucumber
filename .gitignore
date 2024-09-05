@@ -5,4 +5,4 @@ cypress/screenshots/
 cypress/videos/
 cypress/reports/
 cypress/results/
-output.json
+output.json/
