@@ -19,6 +19,7 @@ module.exports = defineConfig({
     },
     excludeSpecPattern: '*.js',
     specPattern: 'cypress/e2e/**/*.{feature,features}',
+    // specPattern: 'cypress/e2e/**/*.js',    
     baseUrl: 'https://herb-uat.herokuapp.com',
   },
 })
