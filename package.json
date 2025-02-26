@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx cypress run",
     "headTest": "npm run test -- --headed",
-    "swagLabsTest": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser electron",
+    "swagLabsTest": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser firefox",
+    "swagElectron": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature --headed --browser electron",
     "swagLabsNoHead": "npx cypress run --spec cypress/e2e/features/sauceLabsDemoAssignment/1-sauceLabs.feature",
     "test:all": "cypress run --spec \"**/*.features\"",
     "cypress:report": "generate-mochawesome-report",
@@ -30,7 +31,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/e2e"
+    "stepDefinitions": "cypress/e2e/"
   },
   "devDependencies": {
     "cypress": "^13.14.2",
